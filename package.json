@@ -1,0 +1,36 @@
+{
+  "name": "toast-system",
+  "version": "0.0.0",
+  "description": "A minimalistic Toast notification system for React",
+  "keywords": [
+    "react-component",
+    "react",
+    "toast",
+    "notification"
+  ],
+  "main": "build",
+  "repository": "https://github.com/glennreyes/toast-system.git",
+  "author": "Glenn Reyes <glenn@glennreyes.com>",
+  "license": "MIT",
+  "files": [
+    "build",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">= 16.7.0-alpha.0",
+    "react-dom": ">= 16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "prettier": "^1.15.2",
+    "pretty-quick": "^1.8.0",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3"
+  }
+}
