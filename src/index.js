@@ -46,4 +46,4 @@ const ToastsProvider = ({
 };
 
 export const Toast = Consumer;
-export default ToastsProvider;
+export const Toasts = ToastsProvider;

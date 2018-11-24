@@ -12,10 +12,10 @@ npm install react-toast
 ```
 
 ```js
-import Toasts, { Toast } from 'react-toast';
+import { ToastsProvider, Toast } from 'react-toast';
 
 const App = ReactDOM.render(
-  <Toasts>
+  <ToastsProvider>
     <header>
       <h1>My app<h1>
     </header>
@@ -24,7 +24,7 @@ const App = ReactDOM.render(
         {toast => <button onClick={() => toast(<div>Clicked!</div>, 1500)}>}
       </Toast>
     </main>
-  </Toasts>,
+  </ToastsProvider>,
   document.getElementById('root')
 );
 ```
