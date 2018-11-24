@@ -1,6 +1,6 @@
 {
   "name": "toast-system",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A minimalistic Toast notification system for React",
   "keywords": [
     "react-component",
