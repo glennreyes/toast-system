@@ -17,8 +17,8 @@ const useToasts = ({ duration: defaultDuration = 3000 }) => {
 };
 
 // Components
-const { Consumer, Provider } = createContext();
-export const Toast = Consumer;
+export const ToastsContext = createContext();
+export const Toast = ToastsContext.Consumer;
 export const ToastsProvider = ({
   children,
   container: Container = Fragment,
@@ -41,9 +41,9 @@ export const ToastsProvider = ({
   );
 
   return (
-    <Provider value={toast}>
+    <ToastsContext.Provider value={toast}>
       {children}
       {domNode ? createPortal(element, domNode) : element}
-    </Provider>
+    </ToastsContext.Provider>
   );
 };
